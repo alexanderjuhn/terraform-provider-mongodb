@@ -7,3 +7,5 @@
 **/.terraform.lock.hcl
 vendor/
 terraform-provider-airflow
+# Added by goreleaser init:
+dist/
