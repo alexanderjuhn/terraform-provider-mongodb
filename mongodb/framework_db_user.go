@@ -334,9 +334,9 @@ func (r *dbUserResource) Update(ctx context.Context, req resource.UpdateRequest,
 		rolesValue = []Role{}
 	}
 	// Always send authenticationRestrictions on update (empty clears them).
-	if authRestrictions == nil {
-		authRestrictions = bson.A{}
-	}
+	//if authRestrictions == nil {
+	//	authRestrictions = bson.A{}
+	//}
 
 	adminDB := client.Database(database)
 	var cmd bson.D
